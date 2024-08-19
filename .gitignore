@@ -4,6 +4,8 @@
 # Test folder ignores
 ./chess_project/test/*
 ./chess_project/assets/test/*
+./chess_project/test/
+./chess_project/assets/test/
 
 
 # Godot-specific ignores
