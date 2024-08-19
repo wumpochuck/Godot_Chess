@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpewx1jnkhomh"]
+
+[ext_resource type="Script" path="res://test/field.gd" id="1_1fwjl"]
+[ext_resource type="Texture2D" uid="uid://ban8nip2j6v7q" path="res://assets/test/field.png" id="1_jjk3o"]
+
+[node name="field" type="Node2D"]
+script = ExtResource("1_1fwjl")
+
+[node name="cells" type="Sprite2D" parent="."]
+texture = ExtResource("1_jjk3o")
+centered = false

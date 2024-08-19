@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://n0dscs1f547q"]
+
+[ext_resource type="Script" path="res://test/game.gd" id="1_2le6a"]
+[ext_resource type="PackedScene" uid="uid://cpewx1jnkhomh" path="res://test/field.tscn" id="1_u5urr"]
+[ext_resource type="Texture2D" uid="uid://ban8nip2j6v7q" path="res://assets/test/field.png" id="2_4q3ew"]
+[ext_resource type="PackedScene" uid="uid://1mip36nc8ajx" path="res://test/pawn.tscn" id="2_o3a75"]
+
+[node name="game" type="Node2D"]
+script = ExtResource("1_2le6a")
+
+[node name="field" parent="." instance=ExtResource("1_u5urr")]
+visible = false
+position = Vector2(427, 128)
+
+[node name="field2" type="Sprite2D" parent="."]
+position = Vector2(427, 128)
+texture = ExtResource("2_4q3ew")
+centered = false
+
+[node name="pawn1" parent="field2" instance=ExtResource("2_o3a75")]
+position = Vector2(384, 448)
+
+[node name="pawn2" parent="field2" instance=ExtResource("2_o3a75")]
+position = Vector2(320, 0)
+color = "Black"
+
+[node name="pawn3" parent="field2" instance=ExtResource("2_o3a75")]
+position = Vector2(384, 0)
+color = "Black"
